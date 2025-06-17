@@ -79,3 +79,33 @@ mysql> select * from si;
 | harini   | ct     | 4000       |
 +----------+--------+------------+
 5 rows in set (0.00 sec)
+
+
+create 3 tables and populate data
+CREATE TABLE Students (
+    StudentID INT,
+    Name VARCHAR(50)
+);
+
+CREATE TABLE Courses (
+    CourseID INT,
+    CourseName VARCHAR(50)
+);
+
+CREATE TABLE Enrollments (
+    StudentID INT,
+    CourseID INT
+);
+
+INSERT INTO Students VALUES
+(1, 'Alice'),
+(2, 'Bob');
+
+INSERT INTO Courses VALUES
+(101, 'Math'),
+(102, 'English');
+
+INSERT INTO Enrollments VALUES
+(1, 101),
+(2, 102);
+
